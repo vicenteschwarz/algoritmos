@@ -20,7 +20,7 @@ switch (ask) {
         console.log("O resultado da adição é", soma)
         break;
     case "-":
-        console.log("O resultado da subtração é", div)
+        console.log("O resultado da subtração é", sub)
         break;
     case "*":
         console.log("O resultado da multiplicação é", mult)
@@ -28,10 +28,12 @@ switch (ask) {
     case "/":
         if (num2 != 0) console.log("O resultado da divisão é", div)
         else console.log("A divisão não é possível pois o divisor deve ser diferente de 0!")
+        minhafunção();
         break;
     default:
         console.log("Cálculo não permitido!")
         minhafunção();
         break;
+        return
 }   }
 minhafunção();

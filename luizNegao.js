@@ -75,7 +75,4 @@ function func2 (){
     }
 
 function func3 (soma){
-
-
-
-}
+    }
