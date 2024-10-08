@@ -9,9 +9,8 @@ console.log("3 - Sair")
 let ask = parseInt(prompt("Qual opção desejas? "))
     switch (ask) {
         case 1:
-            listaSupermercado[listaSupermercado.length]=(prompt("Adicone o item "))
+            listaSupermercado[listaSupermercado.length]=(prompt("Adicione o item "))
             console.log("Seu item foi adicionado!")
-            minhaFunção()
             break;
         case 2:
             for (let i = 0; i <listaSupermercado.length; i++)
