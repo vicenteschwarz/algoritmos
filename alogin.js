@@ -26,9 +26,14 @@ function meuEstoque() {
     console.log("----------------------------------------------------")
     switch (option) {
         case 1:
-            let trade = prompt("Digite um item para adicionar ")
-            array.push(trade)
-            console.log(array)
+            for (let j=0; j=array.length; j++){
+                option2 = prompt("Escolha o item que deseja adicionar, caso deseje voltar ao menu, digite 0: ")
+                if (option2.includes("0")){ 
+                    console.log("Você retornou ao menu! ") 
+                    return meuEstoque()}
+                console.log("Item " + option2 + " adicionado com sucesso! ")
+                array.push(option2)
+                console.log(array)}
             break;
         case 2:
             let remove = prompt("Digite um item para remover ")
